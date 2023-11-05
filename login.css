@@ -68,7 +68,7 @@
 }
 
 
-@media (max-width:667px){  
+@media only screen and (min-width: 375px) and (max-width: 667px){  
     .layer{
         width: 100%;
         height: 170vh;
@@ -112,7 +112,6 @@
         font-size: 11px;
     }
     .layer > main > .image-pane{
-        margin-top: 2rem;
         width: 100%;   
     }
     .layer > main > .image-pane > img{
@@ -121,13 +120,51 @@
         border-radius:20px;
     }
 }
+@media only screen and (min-width: 414px) and (max-width: 896px){
+    .layer{
+        height: 150vh;        
+    }  
+    .layer > main > .image-pane{
+        width: 100%;   
+    }
+    .layer > main > .signup-pane{        
+        gap: 1.2rem;
+    }
+    .layer > main > .signup-pane > .connect{
+        padding: 0.6rem 0rem 0.6rem 4rem;
+    }    
+}
+@media only screen and (min-width: 390px) and (max-width: 844px){
+    .layer{
+        height: 150vh;        
+    }  
+    .layer > main > .image-pane{
+        width: 100%;   
+    }
+    .layer > main > .signup-pane{        
+        gap: 1rem;
+    }
+    .layer > main > .signup-pane > .connect{
+        padding: 0.6rem 0rem 0.6rem 2rem;
+    }    
+}
+@media only screen and (min-width: 430px) and (max-width: 932px){
+    .layer > main > .image-pane{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+@media only screen and (min-width: 412px) and (max-width: 915px){
+    .layer > main > .image-pane{
+        width: 100%; 
+        margin-top: 3.5rem;  
+    }
+}
 
-
-/* Media @ IPad Pro */
-@media (min-width:1024px){  
+@media only screen and (min-width: 768px) and (max-width: 1024px){  
     .layer{
         width: 100%;
-        height: 180vh;
+        height: 200vh;
         background: linear-gradient(to left, red, #E87A14);
         backdrop-filter: blur(9px);
     }  
@@ -140,9 +177,63 @@
         width: 80%;        
     }
     .layer > main > .signup-pane{
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
         width: 100%;
-        gap: 1.8rem;
+        gap: 1rem;
+    }
+    .layer > main > .signup-pane > .logo{
+        margin: 1rem 0rem;
+    }
+    .layer > main > .signup-pane > .logo img{
+        width: 90%;
+    }
+    .layer > main > .signup-pane > .title{
+        font-size: 35px;
+    }
+    .layer > main > .signup-pane > p{
+        font-size: 20px;        
+    }
+    .layer > main > .signup-pane > .connect{
+        width: 70%;
+        padding: 0.6rem 0rem 0.6rem 4rem;
+        gap: 3rem;
+        border-radius: 40px;
+    }    
+    .connect > .conn-icon > img{
+        width: 100%;
+    }
+    .connect > .conn-text{
+        font-size: 25px;
+    }
+    .layer > main > .image-pane{
+        width: 100%;   
+        margin-top: 3rem;
+    }
+    .layer > main > .image-pane > img{
+        width: 100%;
+        height: 100%;
+        border-radius:20px;
+    }
+}
+@media only screen and (min-width: 820px) and (max-width: 1180px){  
+    .layer{
+        width: 100%;
+        height: 190vh;
+        background: linear-gradient(to left, red, #E87A14);
+        backdrop-filter: blur(9px);
+    }  
+    .layer > header{
+        margin-bottom: 1.5rem;
+        padding: 1rem 2rem 0rem;
+    }
+    .layer > main{
+        flex-direction: column;
+        width: 80%;        
+    }
+    .layer > main > .signup-pane{
+        margin-bottom: 1rem;
+        width: 100%;
+        gap: 1rem;
     }
     .layer > main > .signup-pane > .logo{
         margin: 1rem 0rem;
@@ -157,7 +248,60 @@
         font-size: 20px;        
     }
     .layer > main > .signup-pane > .connect{
-        /* display: flex; */
+        width: 70%;
+        padding: 0.6rem 0rem 0.6rem 4rem;
+        gap: 3rem;
+        border-radius: 40px;
+    }    
+    .connect > .conn-icon > img{
+        width: 150%;
+    }
+    .connect > .conn-text{
+        font-size: 30px;
+    }
+    .layer > main > .image-pane{
+        width: 100%;   
+        margin-top: 3rem;
+    }
+    .layer > main > .image-pane > img{
+        width: 100%;
+        height: 100%;
+        border-radius:20px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px){  
+    .layer{
+        width: 100%;
+        height: 190vh;
+        background: linear-gradient(to left, red, #E87A14);
+        backdrop-filter: blur(9px);
+    }  
+    .layer > header{
+        margin-bottom: 1.5rem;
+        padding: 1rem 2rem 0rem;
+    }
+    .layer > main{
+        flex-direction: column;
+        width: 80%;        
+    }
+    .layer > main > .signup-pane{
+        margin-bottom: 1rem;
+        width: 100%;
+        gap: 2rem;
+    }
+    .layer > main > .signup-pane > .logo{
+        margin: 1rem 0rem;
+    }
+    .layer > main > .signup-pane > .logo img{
+        width: 170%;
+    }
+    .layer > main > .signup-pane > .title{
+        font-size: 35px;
+    }
+    .layer > main > .signup-pane > p{
+        font-size: 20px;        
+    }
+    .layer > main > .signup-pane > .connect{
         width: 60%;
         padding: 0.6rem 0rem 0.6rem 4rem;
         gap: 3rem;
