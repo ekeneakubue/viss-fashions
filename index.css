@@ -120,7 +120,7 @@ main{
     width: 450px;
     display: flex;
     margin: auto;
-    height: 540px;
+    height: 530px;
     flex-shrink: 0;
 }
 /* @media(max-width:667px) */
